@@ -6,34 +6,34 @@ dbody<!DOCTYPE html>
         background-color: lightblue;
       }
 
+      #shish {font-style:oblique;
+              font-size: 180%;
+      }
+
       #desc {
         border: 5px solid black;
         padding: 10px;
         width: 1000px;
-        height: 180px;
+        height: 190px;
+        text-align: justify;
+        position: relative;
+        top: 2px;
+        font-size: 155%;
+      }
+      #tabella {
+        border: 5px solid black;
+        padding: 10px;
+        width: 1000px;
+        height: 325px;
         text-align: justify;
         position: relative;
         top: 2px;
       }
-
-      #business {
-        border: 5px solid black;
-        padding: 10px;
-        width: 1000px;
-        height: 250px;
-        text-align: justify;
-        position: relative;
-        top: 2px;
+      td {
+        font-size: 110%;
       }
-
-      #future {
-        border: 5px solid black;
-        padding: 10px;
-        width: 1000px;
-        height: 220px;
-        text-align: justify;
-        position: relative;
-        top: 2px;
+      #voto {position:relative;
+             left: 45px;
       }
 
       #comp {
@@ -45,15 +45,29 @@ dbody<!DOCTYPE html>
         text-align: justify;
         position: relative;
         top: 2px;
+        font-size: 150%;
       }
-      #tabella {
+
+      #business {
         border: 5px solid black;
         padding: 10px;
         width: 1000px;
-        height: 300px;
+        height: 250px;
         text-align: justify;
         position: relative;
         top: 2px;
+        font-size: 150%;
+      }
+
+      #future {
+        border: 5px solid black;
+        padding: 10px;
+        width: 1000px;
+        height: 250px;
+        text-align: justify;
+        position: relative;
+        top: 2px;
+        font-size: 150%;
       }
 
       #butt {
@@ -66,11 +80,9 @@ dbody<!DOCTYPE html>
         top: 2px;
         left: 340px;
         font-style: italic;
+        font-size: 150%
       }
-      #shish {
-        font-style: italic;
-        font-size: 220%;
-      }
+      
 
       h1 {
         font-style: italic;
@@ -78,9 +90,7 @@ dbody<!DOCTYPE html>
         left: 230px;
         font-size: 300%;
       }
-      p {
-        font-size: 150%;
-      }
+     
       tr {
         font-size: 150%;
       }
@@ -88,7 +98,7 @@ dbody<!DOCTYPE html>
   </head>
 
   <body>
-    <div class="relative">
+    <div>
       <h1>Curriculum Vitae</h1>
     </div>
     <div style="position: relative; left: 790px">
@@ -98,7 +108,7 @@ dbody<!DOCTYPE html>
       </p>
     </div>
 
-    <p>e-mail: <b>cdzavagliadaniele@gmail.com </b></p>
+    <p id="shish">e-mail: <b>cdzavagliadaniele@gmail.com </b></p>
     <div id="desc">
       <p>
         Mi chiamo Homer Simpson, ho 45 anni e vivo a Springfield nel 742 di
@@ -116,47 +126,47 @@ dbody<!DOCTYPE html>
     <div id="tabella">
       <table>
         <tr>
-          <th>Caratteristiche richieste</th>
-          <th>Voto</th>
+          <th style="font-size: 150%">Caratteristiche richieste</th>
+          <th style="position: relative; left: 20px; font-size: 150%">Voto</th>
         </tr>
 
         <tr>
           <td>autonomia</td>
-          <td>7</td>
+          <td id="voto">7</td>
         </tr>
 
         <tr>
           <td>autostima</td>
-          <td>3</td>
+          <td id="voto"> 3</td>
         </tr>
         <tr>
           <td>adattamento</td>
-          <td>6</td>
+          <td id="voto">6</td>
         </tr>
         <tr>
           <td>pianificazione</td>
-          <td>4</td>
+          <td id="voto">4</td>
         </tr>
         <tr>
           <td>precisione</td>
-          <td>2</td>
+          <td id="voto">2</td>
         </tr>
         <tr>
           <td>intraprendenza</td>
-          <td>8</td>
+          <td id="voto">8</td>
         </tr>
         <tr>
           <td>problem solving</td>
-          <td>1</td>
+          <td id="voto">1</td>
         </tr>
         <tr>
           <td>lavoro di gruppo</td>
-          <td>9</td>
+          <td id="voto">9</td>
         </tr>
       </table>
     </div>
     <div id="comp">
-      <p><b>Competenze acquisite</b></p>
+      <p style="font-size: 150%"><b>Competenze acquisite</b></p>
       <ul>
         <li>Buone conoscenze di HTML</li>
         <li>Ottime capacità di coordinamento di un gruppo</li>
@@ -179,7 +189,7 @@ dbody<!DOCTYPE html>
       </ul>
     </div>
     <div id="business">
-      <p><b>Perché vorrei lavorare con voi</b></p>
+      <p style="font-size: 150%"><b>Perché vorrei lavorare con voi</b></p>
       <p>
         Sono la persona perfetta per questo posto, in quanto la passione per i
         fumetti mi spinge ad essere sempre curioso ed informato. <br />Tengo
@@ -190,7 +200,7 @@ dbody<!DOCTYPE html>
       </p>
     </div>
     <div id="future">
-      <p><b> Progetti futuri </b></p>
+      <p style="font-size: 150%"><b> Progetti futuri </b></p>
       <p>
         In futuro voglio aprire un blog in lingua italiana di discussione su
         tutto quello che concerne fumetti, manga e anime <br />Desidero creare
@@ -199,7 +209,7 @@ dbody<!DOCTYPE html>
         realizzazione del mio obbiettivo, come CSS e javascript.
       </p>
     </div>
-    <p style="position: relative; left: 250px">
+    <p style="position: relative; left: 238px; font-size: 150%;">
       <b>Clicca qui sotto per andare al mio blog!</b>
     </p>
     <a href="https://homersimpsonblog.forumfree.it/">
