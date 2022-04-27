@@ -1,8 +1,24 @@
-// Metodo veramente brutto e macchinoso, mentre tento di capire come usare .every per gli array
-console.log(2);
-console.log(3);
-console.log(5);
-console.log(7);
-for (let i = 2; i <= 113; i++){
-    if(i % i == 0 && i % 2 != 0 && i % 3 !=0 && i % 5 !=0 && i % 7 !=0) console.log(i);
+//let gino:number[] = [...Array(114).keys()].map(i => i + 1);
+let i:number = 2;        //i=3 o = 2
+let countPrimi:number = 0;
+
+while (countPrimi < 30){
+    let notPrime:boolean = false
+    if(i === 2){ 
+        console.log(i);
+        countPrimi++;
+    }
+    else{
+        for(let o = 2; o < i; o++){
+            if (i % o == 0){
+                notPrime = true;
+                break;
+            }
+        }
+        if (notPrime == false){ 
+            console.log(i);
+            countPrimi++
+        }
+    }
+    i++
 }
