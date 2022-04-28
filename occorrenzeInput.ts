@@ -1,12 +1,16 @@
 //const duplicateSearchAndDestroy = (arry:number[]) => arry.filter((item:number, index:number) => arry.indexOf(item) !== index);
+function insert ():number{
+    return +prompt("Inserisci un numero");
+}
 
 let storage:number[] = [];
 let cunt = {}; // o forse era count.. non lo so
+let inp = insert()
 
-for (let i = 0; i < 100; i++){
-    let inp:number = prompt("Inserisci numero")*1;
-    if (inp > 0)  storage.push(inp);
-    if (inp == -1)  break;
+while (inp != -1){
+    storage.push(inp);
+    inp = insert()
+
 }
     //const duplicateElements = duplicateSearchAndDestroy(storage);
     for (const element of storage){
