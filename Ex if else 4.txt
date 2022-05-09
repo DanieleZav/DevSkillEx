@@ -1,0 +1,11 @@
+let eta:number = prompt("Inserisci il tuo anno di nascita");
+
+if (eta > 2022){
+    console.log("Wow vieni dal futuro");
+                }
+else if (eta < 1900){
+    console.log("Grande Vlad III di Valacchia le porgo i miei ossequi");
+                    }
+else{
+    console.log("Hai" 2022-eta "anni");
+    }

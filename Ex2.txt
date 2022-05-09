@@ -1,7 +1,0 @@
-Ex 2
-
-let inputa:string = prompt("Inserisci a");
-let inputb:string = prompt("inserisci b")
-
-console.log(inputa+inputb);
-console.log(inputb+inputa);

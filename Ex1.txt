@@ -1,7 +1,0 @@
-Ex 1
-
-let inputb:number = prompt("Inserisci base");
-let inputh:number = prompt("inserisci altezza")
-
-console.log("area="inputb*inputh);
-console.log("perimetro="inputb*2+inputh*2);

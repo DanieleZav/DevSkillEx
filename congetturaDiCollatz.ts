@@ -18,7 +18,7 @@ const swapNumber = (oneNumber:number, anotherNumber:number) => {
 let i:number = +prompt("Numero 'i'");
 let j:number = +prompt("Numero 'j'");
 let maxLengthCycle:number[] = []
-
+if((i > 0 && i < 10000) && (j > 0 && j < 10000)){
 if (i > j){
     const [firstNumber, secondNumber] = swapNumber(i,j);    //destrutturazione
     i = firstNumber;
@@ -31,3 +31,6 @@ for (let x = i; x <= j; x++){
     }
 }
 console.log(i, j, maxLengthCycle.length)
+} else {
+    console.log("Almeno uno dei due input non rispecchia i parametri richiesti");
+}

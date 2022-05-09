@@ -1,0 +1,16 @@
+let numero:number = prompt("Inserisci un numero");
+
+if (numero % 2 == 0){
+    console.log("Il numero è pari");
+                }
+
+else {console.log("Il numero è dispari");
+     }
+
+---------------------------------------------
+let numero:number = prompt("Inserisci un numero");
+
+switch (numero % 2){
+    case 0:{console.log("il numero è pari");break;}
+    default:{console.log("il numero è dispari");break;}
+}
