@@ -1,0 +1,43 @@
+function cSort (array:number[]): number[]{
+    array.pop();    
+    for (let i = 0; i < array.length-1; i ++){
+        for (let j = i+1; j < array.length; j++){
+            if (array[i] > array[j]){
+                const temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
+    return array
+}
+
+function dSort (array:number[]): number[]{ 
+    array.pop();   
+    for (let i = 0; i < array.length-1; i ++){
+        for (let j = i+1; j < array.length; j++){
+            if (array[i] < array[j]) {
+                const temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    }
+    return array
+}
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+let inp:number;
+let storageBox:number[] = [];
+while (inp != -1 ){    
+    inp = +prompt("Inserisci valori e termina la sequenza con '-1'.");
+    storageBox.push(inp);
+} //console.log(storageBox);
+let choice:string = prompt("Scegli come ordinare i numeri: 'c' per crescente e 'd' per decrescente.");
+
+if (choice === "c"){
+    console.log(cSort(storageBox));
+}
+if (choice === "d"){
+        console.log(dSort(storageBox));
+}
